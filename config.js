@@ -104,7 +104,7 @@ global.bear = 'VBkM7rbU'
 /*============== WATERMARK ==============*/
 global.wm = 'By L-Botz' //Main Watermark
 global.wm2 = 'L'
-global.wm3 = 'L-Botz | By Latif'
+global.wm3 = 'L-Botz | By L'
 global.botdate = `⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `⻝ 𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
 global.titlebot = `L-Botz | ʙʏ ${global.nameown}`
