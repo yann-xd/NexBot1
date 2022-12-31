@@ -600,7 +600,7 @@ esteh: 0,
                     antiBadword: false,
                     simi: false,
                     expired: 0,
-                    nsfw: false,
+                    nsfw: true,
                     premnsfw: false,
                 }
           conn.resize = async(buffer, ukur1, ukur2) => {
