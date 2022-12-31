@@ -579,7 +579,7 @@ esteh: 0,
                 if (!('simi' in chat))
                     chat.simi = false
                 if (!('nsfw' in chat))
-                    chat.nsfw = false
+                    chat.nsfw = true
                 if (!('premnsfw' in chat))
                     chat.premnsfw = false
                 if (!isNumber(chat.expired))
