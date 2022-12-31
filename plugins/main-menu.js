@@ -201,8 +201,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
    {
 	title: `${htki} ⌨︎ 𝖲 𝖳 𝖠 𝖳 𝖴 𝖲 」 ${htka}`,
 	rows: [
-	    {title: `📛 ɪɴғᴏ ʙᴏᴛ`, rowId: ".botinfo", description: "✧ ɪɴғᴏ ʙᴏᴛ xʏʟᴏɪᴅ"},
-	    {title: `💌 `, rowId: ".owner", description: "✧ ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ɴᴏᴍᴏʀ ᴅᴀɴ ʙɪᴏᴅᴀᴛᴀ ᴏᴡɴᴇʀ"},
+	    {title: `📛 ɪɴғᴏ ʙᴏᴛ`, rowId: ".botinfo", description: "✧ ɪɴғᴏ ʟ-ʙᴏᴛᴢ"},
+	    {title: `💌 ᴏᴡɴᴇʀ`, rowId: ".owner", description: "✧ ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ɴᴏᴍᴏʀ ᴅᴀɴ ʙɪᴏᴅᴀᴛᴀ ᴏᴡɴᴇʀ"},
             {title: `🗣 ʀᴇǫᴜᴇsᴛ ғɪᴛᴜʀ`, rowId: ".request", description: "✧ ʀᴇǫᴜᴇsᴛ ғɪᴛᴜʀ ᴋᴇᴘᴀᴅᴀ ʙᴏᴛ"},
             {title: `📊 ᴛᴇsᴛ sᴘᴇᴇᴅ`, rowId: ".testspeed", description: "✧ ᴛᴇsᴛ ᴋᴇᴄᴇᴘᴀᴛᴀɴ sɪɢɴᴀʟ ʙᴏᴛ"},
 	{title: `⚡ sᴘᴇᴇᴅ`, rowId: ".speed", description: "✧ ᴛᴇs ᴋᴇᴄᴇᴘᴀᴛᴀɴ ʀᴇsᴘᴏɴ ʙᴏᴛ"},
@@ -292,10 +292,10 @@ let tek = `    ⟪ *ʏᴏᴜʀ ɪɴғᴏ* ⟫ 
     ◉  ᴏs ᴘʟᴀᴛғʀᴏᴍ : *${os.platform()}*`
 const listMessage = {
   text: tek,
-  footer: '© xʏʟᴏɪᴅ ʙᴏᴛ | sᴄ ʙʏ : ᴘᴜᴛʀᴀᴍᴏᴅᴢ',
+  footer: '© ʟ-ʙᴏᴛᴢ | ᴀʟʟ ʀᴇsᴇʀᴠᴇᴅ',
   mentions: await conn.parseMention(tek),
   title: ``,
-  buttonText: `ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴏɴ ʟɪsᴛ`,
+  buttonText: `Klik Disini !`,
   sections
 }
   if (teks == '404') {
