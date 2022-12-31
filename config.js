@@ -27,9 +27,9 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
       
 
 /*============== INFO OWNER ==============*/
-global.sig = 'https://instagram.com/enceplzzz'
+global.sig = 'https://instagram.com/l_.bot'
 global.syt = '-'
-global.sgh = 'https://github.com/enceplzzz'
+global.sgh = 'https://github.com/yann-xd'
 global.sgc = 'hhttps://chat.whatsapp.com/FR1KfE3OTcQCayiabos8Ff'
 global.swa = 'wa.me/682213009085'
 global.swb = 'https://discord.gg/'
@@ -47,12 +47,12 @@ global.psaweria = '-'
 global.nomorbot = '6281214909605'
 global.nomorown = '6282213009085'
 global.namebot = 'L-Botz'
-global.nameown = 'Latif'
+global.nameown = 'L'
 
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6282213009085', 'Latif', true]
+  ['6282213009085', 'L', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -127,7 +127,7 @@ global.thumbWarn = 'https://telegra.ph/file/a5eb5169ab1330a537e0b.jpg'
 global.botintro = 'Hallo, Kenalin saya L-BOTZ Saya akan membantu Anda kapan pun & Dimana pun, Saya asisten bot WhatsApp yang di buat oleh OWNER L Saya di rilis pada tanggal\n🗓 ️_31/12/2022_'
 global.intro = 'https://telegra.ph/file/6ab4daac226292a112540.jpg'
 /*============== GLOBAL BIO ==============*/
-global.nameowner = 'Latif'
+global.nameowner = 'L'
 global.umurowner = '-'
 global.asalowner = 'Jawa Barat, Kuningan'
 global.nomorowner = 'wa.me/6282213009085'
