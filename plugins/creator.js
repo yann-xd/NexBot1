@@ -20,17 +20,17 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `${htki} *BIODATA* ${htka}
-${htjava} *💌 Nama* : xʏʟᴏɪᴅ ʙᴏᴛ
-${htjava} *✉️ Nama RL* : ʀʏᴀɴ ᴀᴅɪᴛʏᴀ ᴘʀᴀᴛᴀᴍᴀ
+${htjava} *💌 Nama* : L-Botz
+${htjava} *✉️ Nama RL* : Latif
 ${htjava} *♂️ Gender* : Boys
 ${htjava} *🕋 Agama* : Islam
-${htjava} *⏰ Tanggal lahir* : 12 ᴀɢᴜsᴛᴜs 1997
-${htjava} *🎨 Umur* : 24
-${htjava} *🧮 Kelas* : ᴛᴀᴍᴀᴛ
-${htjava} *🧩 Hobby* : ᴍᴀʙᴀʀ ᴇᴘᴇᴘ
-${htjava} *💬 Sifat* : ɴɢɢᴋ ᴛᴀᴜ ʙᴀɴʜ
-${htjava} *🗺️ Tinggal* : ɪɴᴅᴏɴᴇsɪᴀ, ʙᴀɴᴅᴜɴɢ, ᴊᴀᴡᴀ ʙᴀʀᴀᴛ
-${htjava} *❤️ Waifu* : -
+${htjava} *⏰ Tanggal lahir* : 31 Januari
+${htjava} *🎨 Umur* : -
+${htjava} *🧮 Kelas* : -
+${htjava} *🧩 Hobby* : Jogging
+${htjava} *💬 Sifat* : Kulbet🥶
+${htjava} *🗺️ Tinggal* : Isekai
+${htjava} *❤️ Waifu* : Narberal Gamma (istri)
 
 ${htjava} *📷 ɪɴsᴛᴀɢʀᴀᴍ* : ${sig}
 ${htjava} *🐈 ɢɪᴛʜᴜʙ:* ${sgh}
