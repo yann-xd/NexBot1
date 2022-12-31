@@ -46,7 +46,7 @@ global.psaweria = '-'
 /*============== NOMOR ==============*/
 global.nomorbot = '6281214909605'
 global.nomorown = '6282213009085'
-global.namebot = 'NexBotz'
+global.namebot = 'L-Botz'
 global.nameown = 'L'
 
 
@@ -102,29 +102,29 @@ global.bear = 'VBkM7rbU'
 
 
 /*============== WATERMARK ==============*/
-global.wm = 'By NexBotz' //Main Watermark
+global.wm = 'By L-Botz' //Main Watermark
 global.wm2 = 'L'
-global.wm3 = 'NexBotz | By L'
+global.wm3 = 'L-Botz | By L'
 global.botdate = `⻝ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⻝ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `⻝ 𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
 global.titlebot = `NexBotz | ʙʏ ${global.nameown}`
-global.author = 'L' 
-global.packname = 'L'
+global.author = 'L-Botz' 
+global.packname = 'L-Botz ID'
 global.danied = '✘ 𝟰𝟬𝟰 𝗘𝗥𝗢𝗥'
 global.ultahowner = 'Januari 31 2000'
 
 /*============== LOGO ==============*/
-global.thumb = 'https://telegra.ph/file/a5eb5169ab1330a537e0b.jpg' //Main Thumbnail
-global.imagebot = 'https://telegra.ph/file/06c4e93a3d3f388b2642d.jpg'
+global.thumb = 'https://telegra.ph/file/4410207a60e35c1c85cf8.jpg' //Main Thumbnail
+global.imagebot = 'https://telegra.ph/file/4410207a60e35c1c85cf8.jpg'
 global.giflogo = 'https://ibb.co/3sJ0ybv'
-global.thumbbc = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4' //For broadcast
-global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
-global.giflogo2 = 'https://telegra.ph/file/a5eb5169ab1330a537e0b.jpg'
-global.thumbs = ['https://telegra.ph/file/7db49c83fd106a60741cd.jpg']
+global.thumbbc = 'https://telegra.ph/file/4410207a60e35c1c85cf8.jpg' //For broadcast
+global.giflogo = 'https://telegra.ph/file/4410207a60e35c1c85cf8.jpg'
+global.giflogo2 = 'https://telegra.ph/file/4410207a60e35c1c85cf8.jpg'
+global.thumbs = ['https://telegra.ph/file/4410207a60e35c1c85cf8.jpg']
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 global.thumbBanned = 'https://telegra.ph/file/a5eb5169ab1330a537e0b.jpg'
 global.thumbWarn = 'https://telegra.ph/file/a5eb5169ab1330a537e0b.jpg'
-global.botintro = 'Hallo, Kenalin saya NexBotz Saya akan membantu Anda kapan pun & Dimana pun, Saya asisten bot WhatsApp yang di buat oleh NexEp Saya di rilis pada tanggal\n🗓 ️_31/12/2022_'
+global.botintro = 'Hallo, Kenalin saya L-BOTZ Saya akan membantu Anda kapan pun & Dimana pun, Saya asisten bot WhatsApp yang di buat oleh OWNER L Saya di rilis pada tanggal\n🗓 ️_31/12/2022_'
 global.intro = 'https://telegra.ph/file/6ab4daac226292a112540.jpg'
 /*============== GLOBAL BIO ==============*/
 global.nameowner = 'L'
@@ -379,7 +379,7 @@ global.hwaifu = ['https://i.pinimg.com/originals/ed/34/f8/ed34f88af161e6278993e1
 'https://i.pinimg.com/originals/fd/21/41/fd21419275236bb153de3c8dcbbf3bf9.jpg',
 'https://i.pinimg.com/originals/80/4f/1a/804f1a05f9996c96a2d492b4854b7fd5.jpg']
 /*============== STICKER WM ==============*/
-global.stickpack = 'By NexBotz'
+global.stickpack = 'By L-BOTZ WHATSAPP'
 global.stickauth = `L`
 
 global.multiplier = 38 // The higher, The harder levelup
