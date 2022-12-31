@@ -7,11 +7,11 @@ let ss = '2'
 let sp = '3.5'
 let sv = '5'
 //premium
-let ph = '1'
-let pn = '1.5'
+let ph = '5'
+let pn = '10'
 let pp = '2'
 let pv = '3'
-let ppm = '5'
+let ppm = '20'
 //jasa run
 let ri = '25'
 let pk = '30'
@@ -53,10 +53,10 @@ let info = `
 _Total Fitur:_ 570++
 
 *⫹⫺ PAYMENT:*
-• *Dana:*
-• *Gopay:*
-• *Ovo:*
-• *QRIS*
+• *Dana:082213009085*
+• *Gopay:-*
+• *Ovo:-*
+• *Pulsa:082213009085*
 • *ALL PAYMENT*
 –––––– *🐾 Kebijakan* ––––––
 🗣️: Kak, Kok harganya mahal banget?
@@ -78,9 +78,9 @@ const sections = [
     }, {
     title: `${htjava} PREMIUM ✦-------`,
 	rows: [
-	    {title: "🌟 HEMAT", rowId: '.order *Paket:* 1K • Premium', description: 'PRICE: ' + ph + 'k (7 Hari)' },
-	    {title: "🌟 NORMAL", rowId: '.order *Paket:* 2K • Premium', description: 'PRICE: ' + pn + 'k (1 bulan)' },
-	{title: "🌟 PERMANENT", rowId: '.order *Paket:* 3K • Premium', description: 'PRICE: ' + ppm + 'k (UNLIMITED)' },
+	    {title: "🌟 HEMAT", rowId: '.order *Paket:* 5K • Premium', description: 'PRICE: ' + ph + 'k (7 Hari)' },
+	    {title: "🌟 NORMAL", rowId: '.order *Paket:* 10K • Premium', description: 'PRICE: ' + pn + 'k (1 bulan)' },
+	{title: "🌟 PERMANENT", rowId: '.order *Paket:* 20K • Premium', description: 'PRICE: ' + ppm + 'k (UNLIMITED)' },
 	]
     }, {
         title: `${htjava} JASA RUN ✦-------`,
