@@ -14,7 +14,7 @@ export async function before(m) {
 	if (!mf) return !0
 	console.log(m)
 	if (m.text === 'Balas Pesan' && m.quoted.mtype == 'buttonsMessage') return m.reply("Silahkan kirim pesan balasan kamu.");
-	let txt = `Hai kak @${mf.dari.split('@')[0]}, kamu menerima balasan nih.\n\nPesan balasannya:\n${m.text}\n`.trim();
+	let txt = `Hai kak, kamu menerima balasan nih.\n\nPesan balasannya:\n${m.text}\n`.trim();
 	await this.reply(mf.dari, txt, null).then(() => {
 		m.reply('Berhasil mengirim balasan.')
 		this.delay(1000)
