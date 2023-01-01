@@ -11,9 +11,9 @@
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     conn.menfess = conn.menfess ? conn.menfess : {}
-    if (!text) throw `*Format :*\n\n${usedPrefix + command} no tujuan|nama|pesan\n\n*Contoh:* .menfes 6281214909605|bot|hai.\n\n*Contoh:* ${usedPrefix + command} \n ◉ Berawal dari 628xxx tanpa spasi\n ◉ Boleh pakai nama samaran\n ◉ Jangan digunakan untuk hal negatif ya kak😃.`;
+    if (!text) throw `*Format :*\n\n${usedPrefix + command} no tujuan|nama|pesan\n\n*Contoh:* .menfes 6281214909605|bot|hai.\n\n*Note:* ${usedPrefix + command} \n ◉ Berawal dari 628xxx tanpa spasi\n ◉ Boleh pakai nama samaran\n ◉ Jangan digunakan untuk hal negatif ya kak😃.`;
     let [jid, name, pesan] = text.split('|');
-    if ((!jid || !name || !pesan)) throw `*Format :*\n\n${usedPrefix + command} no tujuan|nama|pesan\n\n*Contoh:* .menfes 6281214909605|bot|hai.\n\n*Note:* ${usedPrefix + command} \n ◉ Berawal dari 628xxx tanpa spasi\n ◉ Boleh pakai nama samaran\n ◉ Jangan digunakan untuk hal negatif ya kak😃.`;
+    if ((!jid || !name || !pesan)) throw `*Format :*\n\n${usedPrefix + command} no tujuan|nama|pesan\n\n*Contoh:* 6281214909605|bot|hai.\n\n*Note:* ${usedPrefix + command} \n ◉ Berawal dari 628xxx tanpa spasi\n ◉ Boleh pakai nama samaran\n ◉ Jangan digunakan untuk hal negatif ya kak😃.`;
     jid = jid.replace(/[^0-9]/g, '') + '@s.whatsapp.net';
     let data = (await conn.onWhatsApp(jid))[0] || {};
     if (!data.exists) throw 'Nomer tidak terdaftar di whatsapp.';
