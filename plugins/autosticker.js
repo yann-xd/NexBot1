@@ -22,3 +22,4 @@ let stikerhuuu = [
  "https://telegra.ph/file/72ab8915fb4d8eb534d1e.png"//gw udah muak
  "https://telegra.ph/file/ee6eb746f48d09bd945a7.png"//turu
  "https://telegra.ph/file/ac5def3b47309a2669f0e.png"//nggih
+]
