@@ -4,7 +4,7 @@ let handler = async (m) => {
 }
 
 handler.tags = ['main']
-handler.command = /^(l-boton)$/i
+handler.command = /^(boton)$/i
 
 handler.admin = true
 
