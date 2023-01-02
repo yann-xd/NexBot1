@@ -7,7 +7,7 @@ if (db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.reply(m.chat, 
 if (command == 'blowjob' ) {
 let blow = JSON.parse(fs.readFileSync('./json/blowjob.json'))
 let res = blow.getRandom()
-conn.sendButtonImg(m.chat, res, '❏  *H E N T A I*\n\nTch, Dasar Sange', author, 'Next', usedPrefix + 'blowjob', m)}
+conn.sendButtonImg(m.chat, res, 'Dasar Sange', author, 'Next', usedPrefix + 'blowjob', m)}
 
 if (command == 'ass' ) {
 let ass = JSON.parse(fs.readFileSync('./json/ass.json'))
