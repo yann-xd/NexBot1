@@ -26,15 +26,15 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //---------------------SOURCE
 
 //> Default
-let res = 'https://api.lolhuman.xyz'
+let res = 'https://api.lolhuman.xyz/api/random/nsfw/'
 let api = '?apikey=Xynoz'
 
 //> Lolhuman
-let resl = 'https://api.lolhuman.xyz'
+let resl = 'https://api.lolhuman.xyz/api/random2/'
 let apil = '?apikey=Xynoz'
 
 //> Xteam
-let xres = 'https://api.xteam.xyz'
+let xres = 'https://api.xteam.xyz/randomimage/'
 let xapi = '?apikey=cristian9407'
 //--------------------------------
 
