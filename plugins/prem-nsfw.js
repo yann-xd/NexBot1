@@ -26,16 +26,16 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //---------------------SOURCE
 
 //> Default
-let res = 'https://saipulanuar.ga/api/nsfwloli'
-let api = '?apikey=danzz'
+let res = 'https://api.lolhuman.xyz'
+let api = '?apikey=Xynoz'
 
 //> Lolhuman
-let resl = 'https://saipulanuar.ga/api/nsfwloli'
-let apil = '?apikey=danzz'
+let resl = 'https://api.lolhuman.xyz'
+let apil = '?apikey=Xynoz'
 
 //> Xteam
-let xres = 'https://saipulanuar.ga/api/nsfwloli'
-let xapi = '?apikey=danzz'
+let xres = 'https://api.xteam.xyz'
+let xapi = '?apikey=cristian9407'
 //--------------------------------
 
 // ••••••••••••••••• OPTIONS •••••••••••
