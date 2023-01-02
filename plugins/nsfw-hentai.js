@@ -1,15 +1,19 @@
-import fs from 'fs'
+import fetch from 'node-fetch'
 
-let handler = async (m, { conn, usedPrefix, command }) => {
-if (global.db.data.chats[m.chat].game == false && m.isGroup) return conn.reply(m.chat, 'Nsfw Tidak Aktif Di Chat Ini\n\nSilahkan Ketik .on nsfw\nUntuk Mengaktifkan Game ', fkontak)
-let hentai = JSON.parse(fs.readFileSync('./json/hentai.json'))
-let res =  hentai[Math.floor(Math.random() * hentai.length)]
-conn.sendButtonImg(m.chat, res, '❏  *H E N T A I*\n\nTch, Dasar Sange', author, 'Next', usedPrefix + 'hentai', m)
+let handler = async (m, { command, conn }) => {
+  let cap = `
+Silakan Aktifkan`
+   if (global.db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.sendButtonDoc(m.chat, '❗𝐍𝐒𝐅𝐖 𝐆𝐀 𝐀𝐊𝐓𝐈𝐅!!', cap, 'ᴇɴᴀʙʟᴇ', '.on nsfw', null, adReply)
+    let anu = await fetch(`https://api.lolhuman.xyz/api/random/nsfw/hentai?apikey=${global.lolkey}`)
+
+   let fimgb = Buffer.from(await anu.arrayBuffer())
+
+    conn.sendButton(m.chat, 'Random Pict Hentai',botdate, fimgb, [['next', '.hentai2']], m)
 }
-handler.help = ['hentai']
-handler.tags = ['nsfw', 'premium']
-handler.command = ['hentai']
-
-handler.premium = true 
+handler.help = ['hentai2']
+handler.tags = ['nsfw']
+handler.command = /^(hentai2)$/i
+handler.limit = true
+handler.premium = true
 
 export default handler
