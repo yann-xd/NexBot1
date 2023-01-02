@@ -1,3 +1,4 @@
+
 import { smsg } from './lib/simple.js'
 import { format } from 'util'
 import { fileURLToPath } from 'url'
@@ -579,7 +580,7 @@ esteh: 0,
                 if (!('simi' in chat))
                     chat.simi = false
                 if (!('nsfw' in chat))
-                    chat.nsfw = true
+                    chat.nsfw = false
                 if (!('premnsfw' in chat))
                     chat.premnsfw = false
                 if (!isNumber(chat.expired))
@@ -600,7 +601,7 @@ esteh: 0,
                     antiBadword: false,
                     simi: false,
                     expired: 0,
-                    nsfw: true,
+                    nsfw: false,
                     premnsfw: false,
                 }
           conn.resize = async(buffer, ukur1, ukur2) => {
@@ -1074,4 +1075,4 @@ watchFile(file, async () => {
     unwatchFile(file)
     console.log(chalk.redBright("Update 'handler.js'"))
     if (global.reloadHandler) console.log(await global.reloadHandler())
-})
+}) 
