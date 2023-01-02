@@ -14,11 +14,10 @@ export async function before(m) {
 	if (!mf) return !0
 	console.log(m)
 	if (m.text === 'Balas Pesan' && m.quoted.mtype == 'buttonsMessage') return m.reply("Silahkan kirim pesan balasan kamu.");
-	let txt = `Hai kak, kamu menerima balasan nih.' `Pesan balasannya:${m.text}`.trim();
+	let txt = `Hai kak, kamu menerima balasan nih.\n\nPesan balasannya:\n${m.text}\n`.trim();
 	await this.reply(mf.dari, txt, null).then(() => {
 		m.reply('Berhasil mengirim balasan.')
 		this.delay(1000)
 		delete this.menfess[mf.id]
 		return !0
 	})
-}
