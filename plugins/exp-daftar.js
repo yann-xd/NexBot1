@@ -50,7 +50,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 
 const listMessage = {
   text: `│›Please select your age at the bottom button...`,
-  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔>  xʏʟᴏɪᴅ ʙᴏᴛ\nsᴄ ʙʏ : ᴘᴜᴛʀᴀᴍᴏᴅᴢ\nʀᴇᴄᴏᴅᴇ ʙʏ xʏʟᴏɪᴅ ᴛᴇᴀᴍ`,
+  footer: `┗ *ʏᴏᴜʀ ɴᴀᴍᴇ:* ${conn.getName(m.sender)}\n<❔>  ʟ-ʙᴏᴛ\nsᴄ ʙʏ : ʟ `,
   title: "▢━━━━「 Registration 」━━━━▢",
   buttonText: "ʀᴇɢɪsᴛᴇʀ",
   sections
@@ -81,7 +81,7 @@ const listMessage = {
 │▸ *sɴ:* ${sn}
 ╰═┅═━––––––๑
 
-xʏʟᴏɪᴅ ʙᴏᴛ
+ʟ-ʙᴏᴛ
 `
   let buttonMessage= {
 'document':{'url':'https://youtu.be/QOm1gEFbMdI'},
