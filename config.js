@@ -118,7 +118,7 @@ global.ultahowner = 'Januari 31 2000'
 /*============== LOGO ==============*/
 global.thumb = 'https://telegra.ph/file/79b2ceca83e0fba9b371d.jpg' //Main Thumbnail
 global.imagebot = 'https://telegra.ph/file/79b2ceca83e0fba9b371d.jpg'
-globalglo.giflogo = 'https://ibb.co/3sJ0ybv'
+global.giflogo = 'https://ibb.co/3sJ0ybv'
 global.thumbbc = 'https://telegra.ph/file/79b2ceca83e0fba9b371d.jpg' //For broadcast
 global.giflogo = 'https://telegra.ph/file/79b2ceca83e0fba9b371d.jpg'
 global.giflogo2 = 'https://telegra.ph/file/79b2ceca83e0fba9b371d.jpg'
