@@ -106,7 +106,7 @@ let handler = async (m, { conn }) => {
   const caption = `*🧑🏻‍🏫 ɴᴀᴍᴇ:* ${user.registered ? user.name : conn.getName(m.sender)}
 *▸ ᴇxᴘ:* ${user.exp}
 *▸ ʟᴇᴠᴇʟ:* ${user.level}
-*▸ ʀᴏʟᴇ:* ${user.role}
+*▸ ʀᴏʟᴇ:* ${user.tier}
 *▸ ʜᴇᴀʟᴛʜ:* ${user.health}
 *▸ ʟɪᴍɪᴛ:* ${user.limit}
 *▸ ᴍᴏɴᴇʏ:* ${user.money}${user.atm ? `
