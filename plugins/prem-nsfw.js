@@ -560,8 +560,8 @@ default:
 
 }
 
-handler.help = ['nsfw <type>', 'hentai <type>']
+handler.help = ['nsfw <type>']
 handler.tags = ['nsfw', 'premium']
-handler.command = /^(nsfw|hentai)/i
+handler.command = /^(nsfw)/i
 
 export default handler
