@@ -1,4 +1,4 @@
-//Made By Johannes
+///Made By Johannes
 //Source https://github.com/FahriAdison/Sad-Multi-Device
 
 import axios from "axios"
