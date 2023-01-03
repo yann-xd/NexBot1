@@ -4,9 +4,9 @@ let handler = async (m, { participants }) => {
     m.reply(' *Yaudah kalo gitu, L-Botz mau tidur dulu kak🥱😴* ')
     // } else m.reply('Ada nomor Ownerku disini...')
 }
-handler.help = ['l(on/off)']
+handler.help = ['bot(on/off)']
 handler.tags = ['main']
-handler.command = /^(lbotoff)$/i
+handler.command = /^(botoff)$/i
 
 handler.admin = true
 
