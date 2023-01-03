@@ -1,8 +1,8 @@
 let handler = async (m, { conn }) => {
 let user = global.db.data.users[m.sender]
-let rol = `${htki} ROLE ${htka}
+let rol = `${htki} TIER ${htka}
 
-Your Tier : ${user.role}
+Your Tier : ${user.tier}
 
 List Tier = 
 
