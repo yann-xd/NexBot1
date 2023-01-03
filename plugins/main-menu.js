@@ -630,7 +630,7 @@ function _0x1766() {
    } 
  } 
  let vn = `./mp3/insecure.opus`
- handler.command = /^(siuuu|siuuuu|\?)$/i 
+ handler.command = /^(listmenu|\?)$/i 
   
  handler.register = true
   
