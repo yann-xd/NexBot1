@@ -2,54 +2,54 @@ let handler = async (m, { conn }) => {
 let user = global.db.data.users[m.sender]
 let rol = `${htki} ROLE ${htka}
 
-Your Role : ${user.role}
+Your Tier : ${user.role}
 
-List Role = 
+List Tier = 
 
-Bronze V
-Bronze IV
-Bronze III
-Bronze II
-Bronze I
-Elite V
-Elite IV
-Elite III
-Elite II
-Elite I
-Master V
-Master IV
+NPC
+Normal
+Beginner III
+Begginer II
+Begginer I
+Pro III
+Pro II
+Pro I
 Master III
 Master II
 Master I
-Grand Master V
-Grand Master IV
 Grand Master III
 Grand Master II
 Grand Master I
-Epic V
-Epic IV
-Epic III
-Epic II
-Epic I
-Legend V
-Legend IV
 Legend III
 Legend II
 Legend I
-Mythic V
-Mythic IV
+Adamantite III
+Adamantite II
+Adamantite I
 Mythic III
 Mythic II
 Mythic I
-Mythic Glory
-EMERALD V
-EMERALD IV
-EMERALD III
-EMERALD II
-EMERALD I
-THE EMERALD`
+Lord III
+Lord II
+Lord I
+Immortal III
+Immortal II
+Immortal I
+God III
+God II
+God I
+Cosmic III
+Cosmic II
+Cosmic I
+Infinity III
+Infinity II
+Infinity I
+Absolute III
+Absolute II
+Absolute I
+The Boundless`
 conn.reply(m.chat, rol, )
 }
-handler.command = ['role']
+handler.command = ['tier']
 
 export default handler
