@@ -10,7 +10,7 @@ import db from '../lib/database.js'
          user.level++ 
   
      if (before !== user.level) { 
-         user.tier = global.rpg.role(user.level).name 
+         user.tier = global.rpg.tier(user.level).name 
          m.reply(` 
  ᴄᴏɴɢʀᴀᴛᴜʟᴀᴛɪᴏɴs, ${this.getName(m.sender)} ʟᴇᴠᴇʟᴇᴅ ᴜᴩ﹗ 
  • 🏅 ᴩʀᴇᴠɪᴏᴜs ʟᴇᴠᴇʟ : ${before} 
