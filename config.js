@@ -101,6 +101,7 @@ global.APIKeys = { // APIKey Here
 global.bear = 'VBkM7rbU'
 global.zenzkey = 'b8040941f7'
 global.lolkey = '8e66d0934cf741bfd2182c16'
+global.xkey = 'cristian9407'
 
 /*============== WATERMARK ==============*/
 global.wm = 'By L-Botz' //Main Watermark
@@ -117,7 +118,7 @@ global.ultahowner = 'Januari 31 2000'
 /*============== LOGO ==============*/
 global.thumb = 'https://telegra.ph/file/79b2ceca83e0fba9b371d.jpg' //Main Thumbnail
 global.imagebot = 'https://telegra.ph/file/79b2ceca83e0fba9b371d.jpg'
-global.giflogo = 'https://ibb.co/3sJ0ybv'
+globalglo.giflogo = 'https://ibb.co/3sJ0ybv'
 global.thumbbc = 'https://telegra.ph/file/79b2ceca83e0fba9b371d.jpg' //For broadcast
 global.giflogo = 'https://telegra.ph/file/79b2ceca83e0fba9b371d.jpg'
 global.giflogo2 = 'https://telegra.ph/file/79b2ceca83e0fba9b371d.jpg'
