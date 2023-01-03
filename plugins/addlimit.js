@@ -21,7 +21,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['addlimit @user <amount>']
 handler.tags = ['xp']
 handler.command = /^addlimit$/
-handler.rowner = false
+handler.owner = true
 handler.police = true
 
 module.exports = handler
