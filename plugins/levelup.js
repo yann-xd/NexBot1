@@ -14,10 +14,10 @@ Kurang *${max - user.exp}* lagi! ✨
     let before = user.level * 1
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
     if (before !== user.level) {
-        let teks = `.             ${user.role}`
+        let teks = `.             ${user.tier}`
         let str = `
 *🎉 C O N G R A T S 🎉*
-*${before}* ➔ *${user.level}* [ *${user.role}* ]`.trim()
+*${before}* ➔ *${user.level}* [ *${user.tier}* ]`.trim()
         try {
             const img = await levelup(teks, user.level)
             conn.sendButton(m.chat, str, botdate, img, [['INVENTORY', '.inv']], m)
