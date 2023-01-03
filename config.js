@@ -100,7 +100,7 @@ global.APIKeys = { // APIKey Here
 /*============== APIKEY ================*/
 global.bear = 'VBkM7rbU'
 global.zenzkey = 'b8040941f7'
-global.lolkey = '8e66d0934cf741bfd2182c16'
+global.lolkey = 'Xynoz'
 global.xkey = 'cristian9407'
 
 /*============== WATERMARK ==============*/
