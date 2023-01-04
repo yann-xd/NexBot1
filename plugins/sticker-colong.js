@@ -18,6 +18,6 @@ try {
 }
 handler.help = ['sticker']
 handler.tags = ['sticker']
-handler.command = /^(colong?$/i
+handler.command = /^(colong)$/i
 
 export default handler
