@@ -51,6 +51,6 @@ let rol = `${htki} TIER ${htka}
 ┗━━━━━━━━ꕥ`
 conn.reply(m.chat, rol, )
 }
-handler.command = ['tier']
+handler.command = ['listtier']
 
 export default handler
