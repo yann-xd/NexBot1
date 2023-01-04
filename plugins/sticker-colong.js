@@ -8,9 +8,9 @@ try {
     let mime = (q.msg || q).mimetype || ''
     if (/image|video/.test(mime)) {
       let img = await q.download()
-      if (!img) throw 'Reply stiker nya!'
-      stiker = await sticker(img, false, 'By', 'NexBotz')
-    } else if (args[0]) stiker = await sticker(false, args[0], 'By', 'NexEp')
+      if (!img) throw 'Sticker nya mana kak?'
+      stiker = await sticker(img, false, 'By', 'L-Botz')
+    } else if (args[0]) stiker = await sticker(false, args[0], 'By', 'L-Botz')
   } finally {
     if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
     else throw 'Conversion failed'
@@ -18,6 +18,6 @@ try {
 }
 handler.help = ['sticker']
 handler.tags = ['sticker']
-handler.command = /^s(tic?ker)?(gif)?$/i
+handler.command = /^(colong?$/i
 
 export default handler
