@@ -1,7 +1,6 @@
 let handler = async (m, { conn }) => {
 let user = global.db.data.users[m.sender]
-let rol = `${htki} TIER ${htka}
-
+let rol = `
 ┏━━━━ꕥ〔 *TIER* 〕ꕥ━━━⬣
 ┃
 ┃ *YOUR TIER* : ${user.tier}
