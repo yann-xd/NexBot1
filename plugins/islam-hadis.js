@@ -23,7 +23,7 @@ muslim
 1 - 5362`
     if (!args[1]) throw `hadist yang ke berapa?\ncontoh: ${usedPrefix + command} ${args[0]} 1`
     try {
-        let res = await fetch(`https://api.lolhuman.xyz/api/hadits/search?apikey=Xynoz/${args[0]}`)
+        let res = await fetch(`https://api.lolhuman.xyz/api/hadits/detail/${usedPrefix + command} ${args[0]}?apikey=Xynoz`)
         let json = await res.json()
         let { number, arab, id } = json.find(v => v.number == args[1])
         m.reply(`No. ${number}
