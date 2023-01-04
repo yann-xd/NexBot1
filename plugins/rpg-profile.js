@@ -32,7 +32,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 let caption = `*YOUR PROFILE*
 *🏷️ Nama:* @${who.split("@")[0]} 
 *❤️ Pasangan:*  ${pasangan ? `@${pasangan.split("@")[0]}` : `Tidak Punya`}
-*💲 Money:* *RP* ${money}
+*💹 Money:* *RP* ${money}
 *🏆 Level* ${level}
 *🎋 Tier:* ${role}
 *🧬 XP:* TOTAL ${exp}
