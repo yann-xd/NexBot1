@@ -40,7 +40,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 }
 handler.help = ['ban2 *@tag|days*']
 handler.tags = ['owner']
-handler.command = /^(ban2)$/i
+handler.command = /^ban2$/i
 handler.mods = true
 handler.fail = null
 export default handler 
