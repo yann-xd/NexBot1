@@ -16,7 +16,7 @@ try {
     else throw 'Conversion failed'
   }
 }
-handler.help = ['sticker']
+handler.help = ['colong']
 handler.tags = ['sticker']
 handler.command = /^(colong)$/i
 
