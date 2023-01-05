@@ -76,7 +76,7 @@ let handler = async (m, { conn, text }) => {
     player.money += coins * 1
     player.exp += exp * 1
 
-    let pesan = `*@${m.sender.split("@")[0]}* Menemukan Dan Membunuh *${monsterName}*\nMendapatkan ${new Intl.NumberFormat('en-US').format(coins)} coins & ${new Intl.NumberFormat('en-US').format(exp)} XP\nBerkurang -${dmg}Hp, Tersisa ${player.healt}/${100}`
+    let pesan = `Kamu Menemukan Dan Membunuh *${monsterName}*\nMendapatkan ${new Intl.NumberFormat('en-US').format(coins)} coins & ${new Intl.NumberFormat('en-US').format(exp)} XP\nBerkurang -${dmg}Hp, Tersisa ${player.healt}/${100}`
     m.reply(pesan)
   } else throw `Tunggu *00:0${cd1}:${cd2}* Untuk Berburu Lagi`
 }
