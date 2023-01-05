@@ -32,7 +32,7 @@ contextInfo: { externalAdReply :{
                         mediaUrl: '',
                         mediaType: 2,
                         description: 'anu',
-                        title: `A PUTRA🎧 : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
+                        title: `A Latif🎧 : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
                         body: `Join Grup`,          previewType: 0,
                         thumbnail: await (await fetch(`https://telegra.ph/file/0b97f2a1ee0a2bb1ebf62.jpg`)).buffer(),
                         sourceUrl: 'https://chat.whatsapp.com/I47cTfEwzIC391KPBjbTPq'
