@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
    let res = anu[Math.floor(Math.random() * anu.length)]
    let cap = `*[ Fakta Unik ]*
 ➥ ${res}`
-conn.sendButtonImg(m.chat, cap, wm, '⇄ Next ⇄', `${usedPrefix + command}`, m)
+conn.sendButton(m.chat, cap, wm, '⇄ Next ⇄', `${usedPrefix + command}`, m)
 }
 handler.command = /^(fakta)$/i
 
