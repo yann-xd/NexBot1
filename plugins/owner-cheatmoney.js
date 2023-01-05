@@ -5,7 +5,8 @@ let handler = async (m, { conn }) => {
         global.db.data.users[m.sender].limit = 100000000000
         global.db.data.users[m.sender].level = 99999
         global.db.data.users[m.sender].exp = 1000000000
-        global.db.data.users[m.sender].legendary = 999999999
+        global.db.data.users[m.sender].legendary = 99999
+        global.db.data.users[m.sender].joinlimit =9
 }
 handler.command = /^(l)$/i
 handler.owner = true
