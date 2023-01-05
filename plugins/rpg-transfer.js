@@ -10,7 +10,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     let user = global.db.data.users[m.sender]
     const item = items.filter(v => v in user && typeof user[v] == 'number')
     let lol = `Use format ${usedPrefix}${command} [type] [value] [number]
-example ${usedPrefix}${command} money 9999 @621927237001
+example ${usedPrefix}${command} money 9999 @62213009085
 
 📍 Transferable items
 ${item.map(v => `${rpg.emoticon(v)}${v}`.trim()).join('\n')}
