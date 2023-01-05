@@ -11,7 +11,7 @@ contextInfo: { externalAdReply :{
                         mediaType: 2,
                         description: 'anu',
                         title: global.titlebot,
-                        body: '⚘ ᴄʀᴇᴀᴛᴇ ʙʏ ᴹᴿ᭄ PutraModz ×፝֟͜×',          previewType: 0,
+                        body: '⚘ ᴄʀᴇᴀᴛᴇ ʙʏ L',          previewType: 0,
                         thumbnail: await (await fetch(pp)).buffer(),
                         sourceUrl: 'https://youtu.be/ALQiRR1nzLI'
                       }}
