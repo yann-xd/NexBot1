@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, command }) => {
 	let url = 'https://api.lolhuman.xyz/api/random/sagiri?apikey=Xynoz'
-	conn.sendButton(m.chat, 'Waifu nya om (≧ω≦)', wm, await(await fetch(url)).buffer(), [['🔁Next🔁',`.${command}`]],m)
+	conn.sendButtonImg(m.chat, 'Waifu nya om (≧ω≦)', wm, await(await fetch(url)).buffer(), [['🔁Next🔁',`.${command}`]],m)
 }
 handler.command = /^(sagiri)$/i
 handler.tags = ['anime']
