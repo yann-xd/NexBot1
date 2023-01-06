@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 let handler = async(m, {
 	conn, text, usedPrefix, command, args
 }) => {
-    if (!args || !args[0]) return conn.reply(m.chat, `Silahkan masukan pesannya\nContoh Penggunaan: ${usedPrefix + command} ${nomorown} pesan untuknya`, fakes, fakeyt)
+    if (!args || !args[0]) return conn.reply(m.chat, `Silahkan masukan pesannya\nContoh Penggunaan: ${usedPrefix + command} ${nomorown} pesan untuknya`)
 	let ngen = ['|']
 	if (args[0].includes(ngen)) throw 'Ganti Simbol | Jadi spasi'
 	if (args[0].length > 14) throw 'Nomor Kepanjangan'
