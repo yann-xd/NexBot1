@@ -26,9 +26,9 @@ Kamu bisa menggunakan Bot ini
 Contoh Penggunaan: ${usedPrefix + command} ${nomorown} pesan untuknya
 Contoh: ${usedPrefix + command} ${nomorown} hai`
 	if (!m.quoted) {
-		await conn.sendButton(mention, tujuan, cap, null, [['Menu', '/menu']], m)
+		await conn.sendButton(mention, tujuan, cap, null, [['Balas', '.balasmenfess']], m)
 	} else {
-		await conn.sendButton(mention, tujuan, cap, null, [['Menu', '/menu']], m)
+		await conn.sendButton(mention, tujuan, cap, null, [['Balas', '.balasmenfess']], m)
 		let media = q ? await m.getQuotedObj() : false || m
 		await conn.copyNForward(mention, media, false).catch(_ => _)
 	}
