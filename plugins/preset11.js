@@ -3,7 +3,6 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, usedPrefix, isAdmin, isOwner, text }) => {
 	if (m.isGroup) {
-		switch (text) {
 				break
 			case 'on': {
 				global.db.data.chats[m.chat].isBanned = false
