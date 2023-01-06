@@ -11,32 +11,10 @@ export async function before(m) {
 		let imgr = fla.getRandom()
 		let txt = `Hᴀɪ ᴋᴀᴋ @${mf.dari.split('@')[0]}, ᴋᴀᴍᴜ ᴍᴇɴᴇʀɪᴍᴀʜ ʙᴀʟᴇsᴀɴ ɴɪʜ.Pesan yang kamu kirim sebelumnya:\n${mf.pesan}\n\nPesan balasannya:\n${m.text}\n`.trim();
 		let sblm = `Pᴇsᴀɴ Aɴᴅᴀ Sᴇʙᴇʟᴜᴍɴʏᴀ ➛ ${mf.pesan}\nPᴇsᴀɴ Bᴀʟᴀsᴀɴɴʏᴀ ➨ ${m.text}`
-		await this.send3ButtonDoc(mf.dari, txt, sblm, 'Balas', '.balasmenfess', 'Owner', '.owner', 'Credit', '.credit', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://instagram.com/_b4c00t4an_s3l3b',
-    mediaType: 2, 
-    description: sgc,
-    title: "Jᴏɪɴ Sɪɴɪ Cᴜʏ",
-    body: wm,
-    thumbnail: fs.readFileSync('./thumbnail.jpg'),
-    sourceUrl: sgc}}})
-		/*await this.sendButton(mf.dari, bottime, txt, `${imgr + 'Menfess'}`, [['BALAS PESAN', '.balasmenfess']], null)*/.then(() => {
-			m.reply('Berhasil Mengirim balasan.')
-			delay(1500)
-			delete this.menfess[mf.id]
-			return !0
-		})
-	}
-	return !0
+		await this.reply(mf.dari, txt, null).then(() => {
+		m.reply('Berhasil mengirim balasan.')
+		this.delay(1000)
+		delete this.menfess[mf.id]
+		return !0
+	})
 }
-/* Made By FokusDotId (Fokus ID)
- * https://github.com/FokusDotId
- * Ingin bikin fitur tapi tidak bisa coding?
- * hubungi: https://wa.me/6281320170984
- * Jangan lupa bawa udut minimal sukun🗿
- 
- *Nᴜᴍᴘᴀɴɢ Nᴀᴍᴀ*
- *Kᴀɴɢ Rᴇᴄᴏᴅᴇ : Aʟᴅɪ Lᴇsᴍᴀɴᴀ
- *Cʜᴀɴɴᴇʟ : AL? Offc
- 
- *Minimal Jangan Di Hapos Anj
-*/
