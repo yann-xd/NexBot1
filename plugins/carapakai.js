@@ -38,8 +38,8 @@ let handler  = async (m, { conn, usedPrefix }) => {
  │   *_Jangan judi, Karena gk bakal_* 
  │   *_balik modal.BENERAN GK BOHONG_* 
  │   
- │*©NexBotz 2020-2021* 
- ╰─「 *Tutorial Main NexBotz* 」 
+ │*©L-Botz 2022-2023* 
+ ╰─「 *Tutorial Main L-Botz* 」 
  `.trim(), m) 
  } 
  handler.help = ['tutorial'] 
