@@ -1,46 +1,61 @@
-import fetch from 'node-fetch'
-let handler = async(m, {
-	conn, text, usedPrefix, command, args
-}) => {
-    if (!args || !args[0]) return conn.reply(m.chat, `Silahkan masukan pesannya\nContoh Penggunaan: ${usedPrefix + command} ${nomorown} pesan untuknya`)
-	let ngen = ['|']
-	if (args[0].includes(ngen)) throw 'Ganti Simbol | Jadi spasi'
-	if (args[0].length > 14) throw 'Nomor Kepanjangan'
-	if (args[0].length < 7) throw 'Nomor Kependekan'
-	if (args[0].startsWith('0')) throw 'Gunakan format 62'
-	if (!args[0]) throw 'Masukkan Teks'
-	
-    let mention = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : args[0] ? (args[0].replace(/[@ .+-]/g, '') + '@s.whatsapp.net') : ''
-	let txt = (args.length > 1 ? args.slice(1).join(' ') : '') || ''
-	let q = m.quoted ? m.quoted : m
-	let mime = (q.msg || q).mimetype || ''
-	let tujuan = `👋 Saya *${conn.user.name}*, Pesan Untuk Kamu
-👥 Dari : *PENGIRIM RAHASIA*
-${htki} 💌 Pesan ${htka}
-${htjava} ${txt}
-`
-	let cap = `${htki} PESAN RAHASIA ${htka}
+/ Fitur By Zivsan And Haori Kasih Credits Dong Stah
+const { MessageType } = require('@adiwajshing/baileys')
+let fetch = require('node-fetch')
+let handler = async(m, { conn, text }) => {
+let [number, pesan] = text.split `|`
+
+    if (!number) return conn.reply(m.chat, 'Penggunaan .chat nomor|pesan untuknya\nContoh : .chat 628xxxxxxxxxx|hai owner', m, {quoted: m, thumbnail: await (await fetch('https://telegra.ph/file/b9a32ee41970d7a71b476.jpg')).buffer(),
+        contextInfo: { forwardingScore: 999, isForwarded: true, externalAdReply: {title: 'Gunakan Dengan Bijak Yah Kak', sourceUrl: 'http://wa.me/6282181825945?text=.chat 6285158866902|Hi Jarot Hehehe 🌹', body: 'Oscarbot By Jarot', thumbnail: await (await fetch('https://telegra.ph/file/345dfdd724db22d617ed3.jpg')).buffer(),}}})
+    if (!pesan) return conn.reply(m.chat, 'Silahkan masukan pesannya', m, {quoted: m, thumbnail: await (await fetch('https://telegra.ph/file/b9a32ee41970d7a71b476.jpg')).buffer(),
+        contextInfo: { forwardingScore: 999, isForwarded: true, externalAdReply: {title: 'Gunakan Dengan Bijak Yah Kak', sourceUrl: 'http://wa.me/6282181825945?text=.chat 6285158866902|Hi Jarot Hehehe 🌹', body: 'Oscarbot By Jarot', thumbnail: await (await fetch('https://telegra.ph/file/345dfdd724db22d617ed3.jpg')).buffer(),}}})
+    if (text > 700) return conn.reply(m.chat, 'Teks Kepanjangan!', m, {quoted: m, thumbnail: await (await fetch('https://telegra.ph/file/b9a32ee41970d7a71b476.jpg')).buffer(),
+        contextInfo: { forwardingScore: 999, isForwarded: true, externalAdReply: {title: 'Gunakan Dengan Bijak Yah Kak', sourceUrl: 'http://wa.me/6282181825945?text=.chat 6285158866902|Hi Jarot Hehehe 🌹', body: 'Oscarbot By Jarot', thumbnail: await (await fetch('https://telegra.ph/file/345dfdd724db22d617ed3.jpg')).buffer(),}}})
+
+    let chat = `${number}`
+    var nomor = m.sender
+    let chat1 = `Hi Saya Bot Ada Yang Kirim Pesan Ke Kamu
+Seseorang Temanmu
+(Pengirim Rahasia)
+⬡──⬡─────────⬡──⬡
+💌 Pesan : ${pesan}
+⬡──⬡─────────⬡──⬡
+Maaf Anda Belum Bisa Membalas ke Pengirim`
+
+let jarot = `▮PENGIRIM RAHASIA 」 
 Anda Ingin Mengirimkan Pesan ke pacar/sahabat/teman/doi/
 mantan?, tapi Tidak ingin tau siapa Pengirimnya?
 Kamu bisa menggunakan Bot ini
-Contoh Penggunaan: ${usedPrefix + command} ${nomorown} pesan untuknya
-Contoh: ${usedPrefix + command} ${nomorown} hai`
-	if (!m.quoted) {
-		await conn.sendButton(mention, tujuan, cap, null, [['Balas', '.balasmenfess']], m)
-	} else {
-		await conn.sendButton(mention, tujuan, cap, null, [['Balas', '.balasmenfess']], m)
-		let media = q ? await m.getQuotedObj() : false || m
-		await conn.copyNForward(mention, media, false).catch(_ => _)
-	}
-	let suks = `Mengirim Pesan *${mime ? mime : 'Teks'}*
-👥 Dari : @${m.sender.replace(/@.+/, '')}
-👥 Untuk : @${mention.replace(/@.+/, '')}
-${htki} 💌 Pesan ${htka}
-${htjava} ${txt}
-`
-	await conn.sendButton(m.chat, suks, wm, null, [['Balas', '.balasmenfess']], m, { mentions: conn.parseMention(suks) })
+Contoh Penggunaan: .chat nomor|pesan untuknya
+Contoh: #chat 628xxxxxxxxxx|hai owner`
+
+    conn.send2ButtonImg(chat + '@s.whatsapp.net', await(await fetch('https://telegra.ph/file/aa06b2e4067f6a6387b75.jpg')).buffer(), chat1, jarot, 'Menu', '.menu', 'Donasi', '.donasi', m)
+    
+    let logs = `BOT AKAN BLOKIR KONTAKMU?
+    
+≫ Spam
+≫ Chat Aneh Aneh
+≫ Berantem`
+
+ let haori1 = `Sukses Mengirim Pesan
+👥 Dari : wa.me/${nomor.split("@s.whatsapp.net")[0]}
+⬡──⬡─────────⬡──⬡
+Isi Pesan : ${pesan}
+⬡──⬡─────────⬡──⬡`
+    conn.send2ButtonImg(m.chat, await (await fetch('https://telegra.ph/file/9ceda8d2274e97bad5bca.jpg')).buffer(), logs, haori1, 'Owner', 'owner', 'Donasi', '.donasi', m)
 }
-handler.help = ['menfess <628XXXXXXXXXX> <pesan>']
-handler.tags = ['menbalas']
-handler.command = /^(menfess|confess|menfes|confes)$/i
-export default handler
+handler.help = ['menfess <nomor|pesan>']
+handler.tags = ['main']
+handler.command = /^(menfess)$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
+
+handler.admin = false
+handler.botAdmin = false
+
+handler.fail = null
+handler.limit = false
+
+module.exports = handler
