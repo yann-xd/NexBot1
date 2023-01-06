@@ -1,8 +1,16 @@
-let handler = async (m) => {
-    global.db.data.chats[m.chat].isBanned = false
-    m.reply(' *Bener Banget!* ')
+import fs from 'fs'
+import fetch from 'node-fetch'
+
+let handler = async (m, { conn, usedPrefix, isAdmin, isOwner, text }) => {
+	if (m.isGroup) {
+		switch (text) {
+				break
+			case 'on': {
+				global.db.data.chats[m.chat].isBanned = false
+				conn.reply(m.chat, 'Ｓｕｋｓｅｓ', m, { contextInfo: { externalAdReply: {title: global.wm, body: 'ʙᴏᴛ ᴛᴇʟᴀʜ ᴅɪ ɴʏᴀʟᴀᴋᴀɴ ᴜɴᴛᴜᴋ ɢʀᴏᴜᴘ ɪɴɪ', sourceUrl: sig, thumbnail: fs.readFileSync('./thumbnail.jpg')  }}})
 }
-handler.tags = ['owner']
+handler.help = ['bot [on/off]']
+handler.tags = ['group']
 handler.command = /^(latifganteng)$/i
 
 handler.admin = true
