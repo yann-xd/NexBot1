@@ -30,13 +30,13 @@ await conn.sendFile(m.chat, audio, 'error.mp3', null, fkontak, true, {
 type: 'audioMessage', 
 ptt: false, seconds: 0,contextInfo: {
          externalAdReply: { showAdAttribution: true,
- mediaUrl: 'www.instagram.com/l4c1f2r',
+ mediaUrl: 'www.instagram.com/l_.bot',
     mediaType: 2, 
-    description: 'www.instagram.com/l4c1f2r',
+    description: 'www.instagram.com/l_.bot',
     title: "Now Playing...",
     body: wm,
-    thumbnail: await (await fetch('https://telegra.ph/file/d6d1271c4a6c3598167e3.jpg')).buffer(),
-    sourceUrl: 'www.instagram.com/l4c1f2r'
+    thumbnail: await (await fetch('https://telegra.ph/file/537d56f824ac1830805ab.jpg')).buffer(),
+    sourceUrl: 'www.instagram.com/l_.bot'
  	  }
      }
     })
