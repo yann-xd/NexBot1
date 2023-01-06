@@ -38,7 +38,7 @@ Contoh: ${usedPrefix + command} ${nomorown} hai`
 ${htki} 💌 Pesan ${htka}
 ${htjava} ${txt}
 `
-	await conn.sendButton(m.chat, suks, wm, null, [['Menu', '/menu']], m, { mentions: conn.parseMention(suks) })
+	await conn.sendButton(m.chat, suks, wm, null, [['Balas', '.balasmenfess']], m, { mentions: conn.parseMention(suks) })
 }
 handler.help = ['menfess <628XXXXXXXXXX> <pesan>']
 handler.tags = ['menbalas']
