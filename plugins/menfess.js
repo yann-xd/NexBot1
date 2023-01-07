@@ -1,14 +1,3 @@
-**
- * Jangan Di Hapus!!
- * 
- * Buatan @SaipulAnuar (ᴹᴿ᭄ King Of Bear ×፝֟͜×)
- * Youtube: https://youtu.be/pwLZpdfO8AU
- * 
- * Ingin bikin fitur tapi tidak bisa coding?
- * hubungi: https://wa.me/6288279268363
- * 
- */
-
 let handler = async (m, { conn, text, usedPrefix, command }) => {
     conn.menfess = conn.menfess ? conn.menfess : {}
     if (!text) throw `*Cara penggunaan :*\n\n${usedPrefix + command} nomor|nama pengirim|pesan\n\n*Note:* nama pengirim boleh nama samaran atau anonymous.\n\n*Contoh:* ${usedPrefix + command} ${m.sender.split`@`[0]}|Wajan|Halo.`;
