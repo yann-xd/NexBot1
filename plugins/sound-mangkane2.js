@@ -11,7 +11,7 @@ let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? c
 let pp = await conn.profilePictureUrl(who).catch(_ => hwaifu.getRandom())
 let name = await conn.getName(who)
 
-let stiker = await sticker(null, global.API(`https://telegra.ph/file/d34b2ab2cb233c749776c.png`), global.packname, global.author)
+let stiker = await sticker(null, global.API(`https://telegra.ph/file/b34b5552f4c79d170557f.jpg`), global.packname, global.author)
  conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, null, { fileLength: 100, contextInfo: {
           externalAdReply :{
           showAdAttribution: true,
@@ -31,13 +31,13 @@ await conn.sendFile(m.chat, audio, 'error.mp3', null, fkontak, true, {
 type: 'audioMessage', 
 ptt: false, seconds: 0,contextInfo: {
          externalAdReply: { showAdAttribution: true,
- mediaUrl: 'www.instagram.com/l4c1f2r',
+ mediaUrl: 'www.instagram.com/l_.bot',
     mediaType: 2, 
-    description: 'www.instagram.com/l4c1f2r',
+    description: 'www.instagram.com/l_.bot',
     title: "Now Playing...",
     body: wm,
-    thumbnail: await (await fetch('https://telegra.ph/file/d6d1271c4a6c3598167e3.jpg')).buffer(),
-    sourceUrl: 'www.instagram.com/l4c1f2r'
+    thumbnail: await (await fetch('https://telegra.ph/file/0b903a72607d1c3fe93e1.jpg')).buffer(),
+    sourceUrl: 'www.instagram.com/l_.botr'
  	  /*   sourceUrl: sig,
            title: '◄⟬ ●━━━ ⧏ ⧎ ⧐ ━━━● ⟭►',  
             body: 'Now Playing...', 
