@@ -11,6 +11,8 @@ global.db.data.users[who].string = 0
 global.db.data.users[who].emerald = 0
 global.db.data.users[who].diamond = 0
 global.db.data.users[who].iron = 0
+global.db.data.users[who].exp = 0
+global.db.data.users[who].level = 0
 }
 handler.help = ['risetuser']
 handler.tags = ['owner', 'rpg']
