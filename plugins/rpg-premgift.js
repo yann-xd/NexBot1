@@ -1,6 +1,6 @@
 let handler = async(m, { conn, args, usedPrefix }) => {
 
-    if (args.length == 0) return conn.reply(m.chat, `Harap masukan Kode FreeGiftmu!`, m)
+    if (args.length == 0) return conn.reply(m.chat, `Harap masukan Kode PremGiftmu!`, m)
     if (args[0] == 'NDDec13' || args[0] == 'els' || args[0] == 'Aullya' || args[0] == 'Giftkey122') {
 
     if (new Date - global.db.data.users[m.sender].lastgift > 86400000) {
@@ -14,9 +14,9 @@ let handler = async(m, { conn, args, usedPrefix }) => {
     global.db.data.users[m.sender].robo += 1
     global.db.data.users[m.sender].petFood += 2
     global.db.data.users[m.sender].lastclaim = new Date * 1
-} else conn.reply(m.chat, '[❗] Kode Gift Gratis hanya dapat digunakan sehari sekali !\n\nKetik *!buygift* untuk membeli kodegift premium', m)
+} else conn.reply(m.chat, '[❗] Kode Gift hanya dapat digunakan sehari sekali !\n\nKetik *!buygift* untuk membeli kodegift premium', m)
    } else {
-        conn.reply(m.chat, `*「 KODE FREE TIDAK VALID 」*\n\nSilahkan belinya terlebih dahulu untuk mendapatkan kodegift !\n\nKetik *!buygift*`, m)
+        conn.reply(m.chat, `*「 KODE TIDAK VALID 」*\n\nSilahkan belinya terlebih dahulu untuk mendapatkan kodegift !\n\nKetik *!buygift*`, m)
     }
 }
 handler.premium = true
