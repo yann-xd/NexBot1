@@ -22,7 +22,7 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	let tags
 	let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'anime', 'update', 'maker', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database','quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'store', 'virus', 'thnks']
+  let arrayMenu = ['all', 'anime', 'update', 'maker', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database','quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'store' ,'thnks']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'Main',
@@ -54,7 +54,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   'advanced': 'Advanced',
   'info': 'Info',
   'store': 'Store Menu',
-  'virus': '𐐪-〚 Virtex 〛-𐑂',
   'thnks': 'Thanks To',
 }
   if (teks == 'game') tags = {
@@ -162,9 +161,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   if (teks == 'store') tags = {
     'store': 'Store Menu'
   }
-  if (teks == 'virus') tags = {
-    'virus': '𐐪-〚 Virtex 〛-𐑂'
- }
   if (teks == 'thnks') tags = {
     'thnks': '𐐪-〚 Thanks To 〛-𐑂'
   }
@@ -239,7 +235,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	{title: `⫹✏️ › 〚 ɴᴜʟɪs 〛`, rowId: ".? nulis", description: "ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ʟɪsᴛ ᴍᴇɴᴜ ɴᴜʟɪs"},
 	{title: `⫹🎵 › 〚 ᴀᴜᴅɪᴏ 〛`, rowId: ".? audio", description: "ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ᴍᴇɴᴜ ᴀᴜᴅɪᴏ"},
         {title: `⫹🎶 › 〚 sᴏᴜɴᴅ 〛`, rowId: ".? soundmenu", description: "ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ʟɪsᴛ sᴏᴜɴᴅ"},
-	{title: `⫹🎦 › 〚 ᴘʀᴇsᴇᴛ ᴀᴍ 〛`, rowId: ".? presetmenu", description: "ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ʟɪsᴛ ᴘʀᴇsᴇᴛ ᴀʟɪɢʜᴛ ᴍᴏᴛɪᴏɴ"},
 	{title: `⫹🦄 › 〚 ɢʀᴏᴜᴘ 〛`, rowId: ".? group", description: "ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ʟɪsᴛ ᴍᴇɴᴜ ᴋʜᴜsᴜs ɢʀᴜᴘ"},
 	{title: `⫹👑 › 〚 ᴀᴅᴍɪɴ 〛`, rowId: ".? admin", description: "ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ʟɪsᴛ ᴍᴇɴᴜ ᴀᴅᴍɪɴ ɢʀᴜᴘ"},
 	{title: `⫹🗃️️ › 〚 ᴅᴀᴛᴀʙᴀsᴇ 〛`, rowId: ".? database", description: "ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ᴍᴇɴᴜ ᴅᴀᴛᴀʙᴀsᴇ"},
@@ -248,7 +243,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	{title: `⫹👩‍💻 › 〚 ᴏᴡɴᴇʀ 〛`, rowId: ".? owner", description: "ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ʟɪsᴛ ᴍᴇɴᴜ ᴏᴡɴᴇʀ"},
 	{title: `⫹🎨 › 〚 ᴍᴀᴋᴇʀ 〛`, rowId: ".? maker", description: "ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ᴍᴇɴᴜ ᴍᴀᴋᴇʀ"},
 	{title: `⫹💌 › 〚 sᴛᴏʀᴇ 〛`, rowId: ".? store", description: "ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ᴍᴇɴᴜ sᴛᴏʀᴇ"},
-	{title: `⫹🔥 › 〚 ᴠɪʀᴛᴇx 〛`, rowId: ".? virus", description: "ʟɪsᴛ ᴠɪʀᴛᴇx ᴀɴᴅ ʙᴜɢ"},
 	]
     },{
 	title: `${htki} ⌨︎ 𝖨 𝖭 𝖥 𝖮 」 ${htka}`,
